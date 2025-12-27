@@ -5,5 +5,7 @@ def login(username, password):
     except AssertionError as e:
         print(e)
 
-login("admin", "1234")     
-login("user", "0000")       
+user = input("Введіть ім'я користувача: ")
+pwd = input("Введіть пароль: ")
+
+login(user, pwd)
